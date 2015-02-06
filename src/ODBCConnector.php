@@ -1,10 +1,10 @@
 <?php
-namespace ODBCSqlServer\Database;
+namespace DblibOdbcSqlServer\Database;
 
 use Illuminate\Database\Connectors\Connector as BaceConnector;
 use Illuminate\Database\Connectors\ConnectorInterface;
 
-class Connector extends BaceConnector implements ConnectorInterface
+class ODBCConnector extends BaceConnector implements ConnectorInterface
 {
     public function connect(array $config)
     {

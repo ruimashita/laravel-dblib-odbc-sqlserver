@@ -1,8 +1,6 @@
 <?php
-namespace ODBCSqlServer\Database;
+namespace DblibOdbcSqlServer\Database;
 
-use Illuminate\Database\DatabaseManager;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 class ServiceProvider extends BaseServiceProvider
@@ -15,9 +13,9 @@ class ServiceProvider extends BaseServiceProvider
             if (!isset($config['prefix'])) {
                 $config['prefix'] = '';
             }
-            $connector = new Connector();
+            $connector = new ODBCConnector();
             $pdo = $connector->connect($config);
-            $db = new Connection($pdo, $config['database'], $config['prefix']);
+            $db = new ODBCConnector($pdo, $config['database'], $config['prefix']);
             return $db;
         });
 

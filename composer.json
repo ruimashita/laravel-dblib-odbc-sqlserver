@@ -1,7 +1,7 @@
 {
-    "name": "rui_mashita/laravel-odbc-sqlserver",
+    "name": "rui_mashita/laravel-dblib-odbc-sqlserver",
     "type": "library",
-    "description": "ODBC SQLServer Driver for Laravel",
+    "description": "PDO DBLIB or PDO ODBC SQL Server Driver for Laravel 4",
     "keywords": ["odbc","laravel"],
     "authors": [
         {
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ODBCSqlServer\\Database\\": "src/"
+            "DblibOdbcSqlServer\\Database\\": "src/"
         }
     },
     "minimum-stability": "dev"
