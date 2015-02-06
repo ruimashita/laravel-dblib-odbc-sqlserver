@@ -29,12 +29,23 @@ Finally be sure to add the odbc driver with connection information to the `confi
 
         // .. Existing config here ..
 
+        // ODBC config example
         'odbc' => array(
             'driver' => 'odbc',
             'dsn' => 'Driver={ODBC Driver};',
             'username' => 'foo',
             'password' => 'bar',
             'database' => '',
+        ),
+
+        // DBLIB config example
+        'dblib' => array(
+            'driver' => 'dblib',
+            'host' => '172.16.0.223',
+            'port' => '1433',
+            'username' => 'sa',
+            'password' => 'password',
+            'database' => 'testtest',
         ),
     ),
 ```
