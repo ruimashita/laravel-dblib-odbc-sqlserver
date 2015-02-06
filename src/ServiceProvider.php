@@ -15,7 +15,7 @@ class ServiceProvider extends BaseServiceProvider
             }
             $connector = new ODBCConnector();
             $pdo = $connector->connect($config);
-            $db = new ODBCConnector($pdo, $config['database'], $config['prefix']);
+            $db = new ODBCConnection($pdo, $config['database'], $config['prefix']);
             return $db;
         });
 
