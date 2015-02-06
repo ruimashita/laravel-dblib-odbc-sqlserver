@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RuiMashita\\Database\\": "src/"
+            "ODBCSqlServer\\Database\\": "src/"
         }
     },
     "minimum-stability": "dev"

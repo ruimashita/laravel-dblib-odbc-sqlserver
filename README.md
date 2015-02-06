@@ -18,7 +18,7 @@ Add `rui_mashita/laravel-odbc-sqlserver` as a requirement to composer.json:
 Then you need to bootstrap the driver by declaring the service provider registration in you `app.php` file under `app\config` path from Laravel project root folder.
 
 ```php
-ODBCSqlServer\ServiceProvider',
+'ODBCSqlServer\Database\ServiceProvider',
 ```
 
 ## Configuration
